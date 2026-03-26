@@ -47,3 +47,52 @@ function onQuadraticClick() {
   const roots = quadratic(a, b, c);
   setText('outQuadratic', Array.isArray(roots) ? roots.join(', ') : roots);
 }
+
+// Task 1 
+
+let count = 0;
+
+function myFunc() {
+    count++;
+    return count;
+}
+
+// Task 2 
+
+function getRandomNum(max) {
+    max = parseInt(max);
+    if (isNaN(max) || max < 1) return 0;
+    return Math.floor(Math.random() * max) + 1;
+}
+
+//task 3
+
+function myAdder(x, y) {
+numberx = parseInt(sum)(x,y)
+return (numberx)
+}
+
+//task 4 
+
+function distance(x1, y1, x2, y2) {
+    return Math.sqrt((x2 - x1) ** 2 + (y2 - y1) ** 2);
+}
+
+//task 5 
+
+function quadratic(a, b, c) {
+  let distance = b * b - 4 * a * c;
+  if (distance > 0) {
+  let r1 = (-b + Math.sqrt(distance)) / (2 * a);
+  let r2 = (-b - Math.sqrt(distance)) / (2 * a);
+  return [r1, r2];
+  }
+  else if (distance === 0) {
+  return [-b / (2 * a)];
+  } 
+  else {
+  let rnum = (-b / (2 * a));
+  let inum = (Math.sqrt(-distance) / (2 * a));
+  return [rnum + "+" + inum + "i", rnum + "-" + inum + "i"];
+    }
+}
