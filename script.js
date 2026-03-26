@@ -68,8 +68,9 @@ function getRandomNum(max) {
 //task 3
 
 function myAdder(x, y) {
-numberx = parseInt(sum)(x,y)
-return (numberx)
+    let numberx = parseInt(x);
+    let numbery = parseInt(y);
+    return numberx + numbery;
 }
 
 //task 4 
